@@ -7,9 +7,13 @@
   <groupId>learn.ee.pj4w</groupId>
   <artifactId>pj4w</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
 
-  <name>pj4w Maven Webapp</name>
+  <modules>
+    <module>pj4w03</module>
+  </modules>
+
+  <name>pj4w</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
