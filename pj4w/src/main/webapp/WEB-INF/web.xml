@@ -17,7 +17,7 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 
     <servlet>
         <servlet-name>servletParametersServlet</servlet-name>
-        <servlet-class>learn.ee.pj4w.ServletParametersServlet</servlet-class>
+        <servlet-class>learn.ee.pj4w.initparams.ServletParametersServlet</servlet-class>
         <init-param>
             <param-name>database</param-name>
             <param-value>CustomerSupport</param-value>

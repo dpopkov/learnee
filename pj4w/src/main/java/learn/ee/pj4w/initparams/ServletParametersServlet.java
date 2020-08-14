@@ -1,4 +1,4 @@
-package learn.ee.pj4w;
+package learn.ee.pj4w.initparams;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.http.HttpServlet;

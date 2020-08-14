@@ -1,4 +1,4 @@
-package learn.ee.pj4w;
+package learn.ee.pj4w.responseparams;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
