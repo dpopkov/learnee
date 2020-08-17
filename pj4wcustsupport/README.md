@@ -4,6 +4,7 @@ Customer Support Project
 ### 5 - Maintaining State Using Sessions
 * Setting Up the User Database for the simplest login capability
 * Add LoginServlet and login.jsp
+* Detecting changes to Sessions and maintaining a list of active Sessions
 
 ### 4 - Using JSP to Display Content
 * Configuring JSP properties in the deployment descriptor
