@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<p><a href="<c:url value="login?logout" />">Logout</a></p>
+
 <h2>Ticket #<%= ticketId %>: <%= ticket.getSubject() %></h2>
 <i>Customer Name - <%= ticket.getCustomerName() %></i>
 <br/><br/>

@@ -29,6 +29,10 @@ public class TicketServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        if (req.getSession().getAttribute("username") == null) {
+            resp.sendRedirect("login");
+            return;
+        }
         String action = req.getParameter("action");
         if (action == null) {
             action = "list";
@@ -52,6 +56,10 @@ public class TicketServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (req.getSession().getAttribute("username") == null) {
+            resp.sendRedirect("login");
+            return;
+        }
         String action = req.getParameter("action");
         if (action == null) {
             action = "list";
@@ -116,7 +124,7 @@ public class TicketServlet extends HttpServlet {
     /** Creates ticket from the request parameters and adds it to the database. */
     private void createTicket(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         Ticket ticket = new Ticket();
-        ticket.setCustomerName(req.getParameter("customerName"));
+        ticket.setCustomerName((String) req.getSession().getAttribute("username"));
         ticket.setSubject(req.getParameter("subject"));
         ticket.setBody(req.getParameter("body"));
         Part filePart = req.getPart("file1");

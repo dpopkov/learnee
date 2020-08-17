@@ -1,18 +1,16 @@
-<%@ page session="false" %>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Customer Support</title>
 </head>
 <body>
+
+<p><a href="<c:url value="login?logout" />">Logout</a></p>
+
 <h2>Create a Ticket</h2>
 
 <form method="post" action="tickets" enctype="multipart/form-data">
     <input type="hidden" name="action" value="create"/>
-    <label>
-        Your Name<br/>
-        <input type="text" name="customerName"/>
-    </label><br/><br/>
     <label>
         Subject<br/>
         <input type="text" name="subject"/>
