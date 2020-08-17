@@ -1,6 +1,11 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 5: Maintaining State Using Sessions
+
+#### Shopping-Cart example - [pj4w05cart](pj4w05cart)
+* Storing data in a session
+
 ### Ch 4: Using JSPs to Display Content - [pj4w04](pj4w04)
 * Directives, Declarations, Scriptlets, and Expressions
 * Commenting JSP
