@@ -18,7 +18,7 @@ public class ProfileServlet extends HttpServlet {
         User user = new User();
         user.setUserId(12345L);
         user.setUserName("Coder42");
-        user.setFirsName("Alice");
+        user.setFirstName("Alice");
         user.setLastName("Smith");
 
         ConcurrentHashMap<String, Boolean> permissions = new ConcurrentHashMap<>();

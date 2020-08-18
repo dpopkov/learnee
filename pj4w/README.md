@@ -6,6 +6,7 @@ pj4w - Professional Java for Web Applications
 #### User-Profile example - [pj4w06profile](pj4w06profile)
 * Using the Implicit EL Scope
 * Using the Implicit EL Variables
+* Accessing Collections and Stream API
 
 ### Ch 5: Maintaining State Using Sessions
 

@@ -6,9 +6,18 @@ import java.util.concurrent.ConcurrentHashMap;
 public class User {
     private long userId;
     private String userName;
-    private String firsName;
+    private String firstName;
     private String lastName;
     private Map<String, Boolean> permissions = new ConcurrentHashMap<>();
+
+    public User() { }
+
+    public User(long userId, String userName, String firstName, String lastName) {
+        this.userId = userId;
+        this.userName = userName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public long getUserId() {
         return userId;
@@ -26,12 +35,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getFirsName() {
-        return firsName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirsName(String firsName) {
-        this.firsName = firsName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {

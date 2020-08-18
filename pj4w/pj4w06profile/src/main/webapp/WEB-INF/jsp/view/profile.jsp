@@ -10,7 +10,7 @@
 
 User ID: ${user.userId}<br />
 Username: ${user.userName} (${user.userName.length()} characters)<br />
-Full Name: ${fn:escapeXml(user.lastName) += ', ' += fn:escapeXml(user.firsName)}<br /><br />
+Full Name: ${fn:escapeXml(user.lastName) += ', ' += fn:escapeXml(user.firstName)}<br /><br />
 <h4>Permissions (${fn:length(user.permissions)})</h4>
 User: ${user.permissions["user"]}<br />
 Moderator: ${user.permissions["moderator"]}<br />
