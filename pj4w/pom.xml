@@ -14,6 +14,7 @@
     <module>pj4w04</module>
     <module>pj4w05cart</module>
     <module>pj4w05session</module>
+    <module>pj4w06profile</module>
     <module>pj4wcommon</module>
   </modules>
 
