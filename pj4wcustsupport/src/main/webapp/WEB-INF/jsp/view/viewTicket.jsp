@@ -1,7 +1,6 @@
-<%@ page import="learn.ee.pj4wcustsupport.Ticket" %>
-<%@ page import="learn.ee.pj4wcustsupport.Attachment" %>
+<%--@elvariable id="ticketId" type="java.lang.String"--%>
+<%--@elvariable id="ticket" type="learn.ee.pj4wcustsupport.Ticket"--%>
 <%
-    String ticketId = (String) request.getAttribute("ticketId");
     Ticket ticket = (Ticket) request.getAttribute("ticket");
 %>
 <!DOCTYPE html>
@@ -13,10 +12,10 @@
 
 <p><a href="<c:url value="login?logout" />">Logout</a></p>
 
-<h2>Ticket #<%= ticketId %>: <%= ticket.getSubject() %></h2>
-<i>Customer Name - <%= ticket.getCustomerName() %></i>
+<h2>Ticket #${ticketId}: ${ticket.subject}</h2>
+<i>Customer Name - ${ticket.customerName}</i>
 <br/><br/>
-<%= ticket.getBody()%>
+${ticket.body}
 <br/><br/>
 <%
     if (ticket.getNumberOfAttachments() > 0) {
@@ -28,7 +27,7 @@
             }
             %><a href="<c:url value="/tickets">
                     <c:param name="action" value="download" />
-                    <c:param name="ticketId" value="<%= ticketId %>" />
+                    <c:param name="ticketId" value="${ticketId}" />
                     <c:param name="attachment" value="<%= attachment.getName() %>" />
                 </c:url>">
                 <%= attachment.getName() %>

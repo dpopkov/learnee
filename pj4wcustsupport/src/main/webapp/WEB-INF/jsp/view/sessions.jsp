@@ -1,3 +1,4 @@
+<%--@elvariable id="numberOfSession" type="java.lang.Integer"--%>
 <%@ page import="java.util.List" %>
 <%!
     private static String formatInterval(long timeInterval) {
@@ -11,7 +12,6 @@
     }
 %>
 <%
-    int numberOfSessions = (Integer) request.getAttribute("numberOfSession");
     @SuppressWarnings("unchecked")
     List<HttpSession> sessions = (List<HttpSession>) request.getAttribute("sessionList");
 %>
@@ -26,7 +26,7 @@
 
 <h2>Sessions</h2>
 
-<p>There are a total of <%= numberOfSessions %> active sessions in this application</p>
+<p>There are a total of ${numberOfSession} active sessions in this application</p>
 <%
     long timestamp = System.currentTimeMillis();
     for (HttpSession hs : sessions) {

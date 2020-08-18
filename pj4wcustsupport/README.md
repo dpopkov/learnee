@@ -1,6 +1,9 @@
 Customer Support Project
 ========================
 
+### 6 - Using the Expression Language in JSPs
+* Replacing Java code with EL
+
 ### 5 - Maintaining State Using Sessions
 * Setting Up the User Database for the simplest login capability
 * Add LoginServlet and login.jsp
