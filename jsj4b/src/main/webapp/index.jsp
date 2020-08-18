@@ -17,6 +17,8 @@
 <p>Student Dropdown Form: <a href="student-dropdown-form.html">To Form</a></p>
 <p>Student Radiobutton Form: <a href="student-radiobutton-form.html">To Form</a></p>
 <p>Student Checkboxes Form: <a href="student-checkboxes-form.html">To Form</a></p>
+<p>ToDo Demo Form: <a href="todo-demo.jsp">To Form</a></p>
+<p>Personalize Form: <a href="cookies-personalize-form.html">To Form</a></p>
 
 <jsp:include page="footer.jsp" />
 
