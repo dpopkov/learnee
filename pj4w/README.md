@@ -1,6 +1,11 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 7: Using the Java Standard Tag Library
+
+#### Address-Book example - [pj4w07address](pj4w07address)
+* Using the Core Tag Library (C Namespace)
+
 ### Ch 6: Using the Expression Language in JSPs
 
 #### User-Profile example - [pj4w06profile](pj4w06profile)
