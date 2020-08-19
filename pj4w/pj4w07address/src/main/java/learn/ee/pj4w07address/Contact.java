@@ -2,6 +2,7 @@ package learn.ee.pj4w07address;
 
 import java.time.Instant;
 import java.time.MonthDay;
+import java.util.Date;
 
 @SuppressWarnings("unused")
 public class Contact implements Comparable<Contact> {
@@ -30,6 +31,10 @@ public class Contact implements Comparable<Contact> {
             return firstName.compareTo(other.firstName);
         }
         return last;
+    }
+
+    public Date getOldDateCreated() {
+        return new Date(dateCreated.toEpochMilli());
     }
 
     public String getFirstName() {

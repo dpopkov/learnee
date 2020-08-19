@@ -5,6 +5,7 @@ pj4w - Professional Java for Web Applications
 
 #### Address-Book example - [pj4w07address](pj4w07address)
 * Using the Core Tag Library (C Namespace)
+* Using the i18n and Formatting Tag Library (FMT Namespace)
 
 ### Ch 6: Using the Expression Language in JSPs
 
