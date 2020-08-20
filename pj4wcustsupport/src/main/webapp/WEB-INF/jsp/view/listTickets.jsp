@@ -1,9 +1,4 @@
-<%--suppress unchecked --%>
-<%@ page import="learn.ee.pj4wcustsupport.Ticket" %>
-<%@ page import="java.util.Map" %>
-<%
-    Map<Integer, Ticket> ticketDatabase = (Map<Integer, Ticket>) request.getAttribute("ticketDatabase");
-%>
+<%--@elvariable id="ticketDatabase" type="java.util.Map<java.lang.Integer, learn.ee.pj4wcustsupport.Ticket>"--%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,25 +13,21 @@
 <p>
     <a href="<c:url value="tickets"><c:param name="action" value="create"/></c:url>">Create Ticket</a>
 </p>
-<%
-    if (ticketDatabase.isEmpty()) {
-%>
+<c:choose>
+    <c:when test="${fn:length(ticketDatabase) == 0}">
         <p><i>There are no tickets in the system</i></p>
-<%
-    } else {
-        for (Integer id : ticketDatabase.keySet()) {
-            String idString = id.toString();
-            Ticket ticket = ticketDatabase.get(id);
-%>
-        Ticket #<%= idString %>: <a href="<c:url value="/tickets">
+    </c:when>
+    <c:otherwise>
+        <c:forEach var="entry" items="${ticketDatabase}">
+            Ticket #${entry.key}: <a href="<c:url value="/tickets">
                 <c:param name="action" value="view" />
-                <c:param name="ticketId" value="<%= idString %>" />
-            </c:url>"><%= ticket.getSubject() %>
-        </a>(customer: <%= ticket.getCustomerName() %>)
-        <br />
-<%
-        }
-    }
-%>
+                <c:param name="ticketId" value="${entry.key}" />
+            </c:url>">
+            <c:out value="${entry.value.subject}"/>
+        </a> (customer: <c:out value="${entry.value.customerName}"/>)<br/>
+        </c:forEach>
+    </c:otherwise>
+</c:choose>
+
 </body>
 </html>

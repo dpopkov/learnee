@@ -1,6 +1,9 @@
 Customer Support Project
 ========================
 
+### 7 - Using the Java Standard Tag Library (JSTL)
+* Replacing Java code with JSTL (login.jsp, listTickets.jsp, viewTicket.jsp)
+
 ### 6 - Using the Expression Language in JSPs
 * Replacing Java code with EL
 
