@@ -5,7 +5,7 @@ pj4w - Professional Java for Web Applications
 
 #### Template-Tags project - [pj4w08tags](pj4w08tags)
 * Creating a Tag File to serve as an HTML Template
-
+* Creating a Date Formatting Tag Handler
 
 ### Ch 7: Using the Java Standard Tag Library
 

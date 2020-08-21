@@ -2,3 +2,4 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="template" tagdir="/WEB-INF/tags/template" %>
+<%@ taglib prefix="pj4w" uri="http://learn.ee.pj4w.org" %>
