@@ -1,6 +1,12 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 8: Writing Custom Tag and Function Libraries
+
+#### Template-Tags project - [pj4w08tags](pj4w08tags)
+* Creating a Tag File to serve as an HTML Template
+
+
 ### Ch 7: Using the Java Standard Tag Library
 
 #### Address-Book example - [pj4w07address](pj4w07address)
