@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="learn.ee.pj4wcustsupport.Ticket" %>
-<%@ page import="learn.ee.pj4wcustsupport.Attachment" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="pj4w" uri="http://learn.ee.pj4w" %>
+<%@ taglib prefix="template" tagdir="/WEB-INF/tags/template" %>

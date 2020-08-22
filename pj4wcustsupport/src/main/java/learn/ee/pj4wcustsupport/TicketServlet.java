@@ -11,6 +11,7 @@ import javax.servlet.http.Part;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.time.OffsetDateTime;
 import java.util.*;
 
 @WebServlet(
@@ -127,6 +128,7 @@ public class TicketServlet extends HttpServlet {
         ticket.setCustomerName((String) req.getSession().getAttribute("username"));
         ticket.setSubject(req.getParameter("subject"));
         ticket.setBody(req.getParameter("body"));
+        ticket.setDateCreated(OffsetDateTime.now());
         Part filePart = req.getPart("file1");
         if (filePart != null && filePart.getSize() > 0) {
             Attachment attachment = processAttachment(filePart);

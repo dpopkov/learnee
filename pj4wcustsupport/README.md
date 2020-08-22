@@ -1,6 +1,10 @@
 Customer Support Project
 ========================
 
+### 8 - Writing Custom Tag and Function Libraries
+* Creating an EL Function to format time intervals
+* Replace all Java code with custom JSTL Tags
+
 ### 7 - Using the Java Standard Tag Library (JSTL)
 * Replacing Java code with JSTL (login.jsp, listTickets.jsp, viewTicket.jsp)
 
