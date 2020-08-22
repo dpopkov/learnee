@@ -1,6 +1,10 @@
 jsj4b - JSP, Servlets and JDBC for Beginners: Build a Database App
 ------------------------------------------------------------------
 
+### 4 - JSP Standard Tag Library (JSTL) - Function Tags
+* Functions length, toUpperCase, startsWith
+* Functions split, join
+
 ### 3 - JSP Standard Tag Library (JSTL) - Core Tags
 * Using JSTL Core Tags
 
