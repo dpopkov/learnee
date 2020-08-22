@@ -1,6 +1,9 @@
 jsj4b - JSP, Servlets and JDBC for Beginners: Build a Database App
 ------------------------------------------------------------------
 
+### 5 - Build a Multi-Lingual App with JSTL - i18n Tags
+* Using setLocale, setBundle and message Tags
+
 ### 4 - JSP Standard Tag Library (JSTL) - Function Tags
 * Functions length, toUpperCase, startsWith
 * Functions split, join
