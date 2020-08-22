@@ -12,6 +12,7 @@
     <modules>
         <module>jsj4b</module>
         <module>jsj4b02tagdemo</module>
+        <module>jsj4b06servletdemo</module>
     </modules>
 
     <name>jsj4ball</name>

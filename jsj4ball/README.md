@@ -1,6 +1,11 @@
 jsj4b - JSP, Servlets and JDBC for Beginners: Build a Database App
 ------------------------------------------------------------------
 
+### 6 - Servlet Fundamentals
+* Comparing Servlets and JSP
+* Reading HTML form data with Servlets
+* Reading init parameters
+
 ### 5 - Build a Multi-Lingual App with JSTL - i18n Tags
 * Using setLocale, setBundle and message Tags
 
