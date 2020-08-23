@@ -6,6 +6,7 @@
 <p><a href="<c:url value="/hello"/>">Hello Servlet</a></p>
 <p><a href="<c:url value="/student-form.html"/>">Add Student Form</a></p>
 <p><a href="<c:url value="/initParams"/>">Initialization Parameters Servlet</a></p>
+<p><a href="<c:url value="/mvcDemo"/>">MVC Demo Servlet</a></p>
 
 </body>
 </html>
