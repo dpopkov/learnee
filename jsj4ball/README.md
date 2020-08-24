@@ -3,6 +3,7 @@ jsj4b - JSP, Servlets and JDBC for Beginners: Build a Database App
 
 ### 7 - Student Tracker: Complete Database Web App with JDBC
 * Use DataSource for Connection pooling
+* List Students
 
 ### 6 - Servlet Fundamentals
 * Comparing Servlets and JSP
