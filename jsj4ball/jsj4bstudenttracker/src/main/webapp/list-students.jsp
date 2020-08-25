@@ -1,4 +1,4 @@
-<%--@elvariable id="studentsList" type="java.util.List<learn.ee.jsj4bstudenttracker.Student>"--%>
+<%--@elvariable id="STUDENTS_LIST" type="java.util.List<learn.ee.jsj4bstudenttracker.Student>"--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
@@ -25,12 +25,18 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th>Action</th>
             </tr>
-            <c:forEach var="st" items="${studentsList}">
+            <c:forEach var="st" items="${STUDENTS_LIST}">
+                <c:url var="tempLink" value="/students">
+                    <c:param name="command" value="LOAD" />
+                    <c:param name="studentId" value="${st.id}" />
+                </c:url>
                 <tr>
                     <td>${st.firstName}</td>
                     <td>${st.lastName}</td>
                     <td>${st.email}</td>
+                    <td><a href="${tempLink}">Update</a></td>
                 </tr>
             </c:forEach>
         </table>
