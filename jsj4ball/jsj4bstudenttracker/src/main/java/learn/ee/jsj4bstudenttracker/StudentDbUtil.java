@@ -1,10 +1,7 @@
 package learn.ee.jsj4bstudenttracker;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,5 +27,22 @@ public class StudentDbUtil {
             }
         }
         return students;
+    }
+
+    public void add(Student student) throws SQLException {
+        try (Connection conn = dataSource.getConnection()) {
+            PreparedStatement stmt = conn.prepareStatement(
+                    "INSERT INTO student (first_name, last_name, email) VALUES (?, ?, ?)",
+                    Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, student.getFirstName());
+            stmt.setString(2, student.getLastName());
+            stmt.setString(3, student.getEmail());
+            stmt.executeUpdate();
+            ResultSet keys = stmt.getGeneratedKeys();
+            if (keys.next()) {
+                int id = keys.getInt(1);
+                student.setId(id);
+            }
+        }
     }
 }

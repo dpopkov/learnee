@@ -30,6 +30,36 @@ public class StudentControllerServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String command = req.getParameter("command");
+        if (command == null) {
+            command = "list";
+        }
+        switch (command) {
+            case "add":
+                addStudent(req, resp);
+                break;
+            case "list":
+            default:
+                listStudents(req, resp);
+                break;
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
+    }
+
+    private void addStudent(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String firstName = req.getParameter("firstName");
+        String lastName = req.getParameter("lastName");
+        String email = req.getParameter("email");
+        Student student = new Student(firstName, lastName, email);
+        try {
+            studentDbUtil.add(student);
+        } catch (SQLException e) {
+            throw new ServletException(e);
+        }
         listStudents(req, resp);
     }
 

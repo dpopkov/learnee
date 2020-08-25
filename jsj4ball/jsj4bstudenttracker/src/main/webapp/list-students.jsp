@@ -16,13 +16,17 @@
 </div>
 <div id="container">
     <div id="content">
+        <input type="button" value="Add Student"
+               onclick="window.location.href='add-student-form.jsp'; return false"
+               class="add-student-button"
+        />
         <table>
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
             </tr>
-            <c:forEach var="st" items="${studentsList}" >
+            <c:forEach var="st" items="${studentsList}">
                 <tr>
                     <td>${st.firstName}</td>
                     <td>${st.lastName}</td>
