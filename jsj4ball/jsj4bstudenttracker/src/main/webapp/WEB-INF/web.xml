@@ -13,6 +13,7 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
     </resource-ref>
 
     <welcome-file-list>
+        <welcome-file>students</welcome-file>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 

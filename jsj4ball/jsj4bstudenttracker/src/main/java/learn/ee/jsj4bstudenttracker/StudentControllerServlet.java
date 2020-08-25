@@ -44,6 +44,9 @@ public class StudentControllerServlet extends HttpServlet {
             case "UPDATE":
                 updateStudent(req, resp);
                 break;
+            case "DELETE":
+                deleteStudent(req, resp);
+                break;
             case "LIST":
             default:
                 listStudents(req, resp);
@@ -90,6 +93,16 @@ public class StudentControllerServlet extends HttpServlet {
         Student student = new Student(id, firstName, lastName, email);
         try {
             studentDbUtil.update(student);
+        } catch (SQLException e) {
+            throw new ServletException(e);
+        }
+        listStudents(req, resp);
+    }
+
+    private void deleteStudent(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        int id = Integer.parseInt(req.getParameter("studentId"));
+        try {
+            studentDbUtil.deleteById(id);
         } catch (SQLException e) {
             throw new ServletException(e);
         }

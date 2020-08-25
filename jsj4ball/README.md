@@ -6,6 +6,7 @@ jsj4b - JSP, Servlets and JDBC for Beginners: Build a Database App
 * List Students
 * Add Student
 * Update Student
+* Delete Student
 
 ### 6 - Servlet Fundamentals
 * Comparing Servlets and JSP

@@ -77,4 +77,12 @@ public class StudentDbUtil {
             return rowCount == 1;
         }
     }
+
+    public void deleteById(int studentId) throws SQLException {
+        try (Connection conn = dataSource.getConnection()) {
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM student WHERE id = ?");
+            stmt.setInt(1, studentId);
+            stmt.executeUpdate();
+        }
+    }
 }

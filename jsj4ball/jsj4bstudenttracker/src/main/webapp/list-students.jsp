@@ -29,14 +29,23 @@
             </tr>
             <c:forEach var="st" items="${STUDENTS_LIST}">
                 <c:url var="tempLink" value="/students">
-                    <c:param name="command" value="LOAD" />
-                    <c:param name="studentId" value="${st.id}" />
+                    <c:param name="command" value="LOAD"/>
+                    <c:param name="studentId" value="${st.id}"/>
+                </c:url>
+                <c:url var="deleteLink" value="/students">
+                    <c:param name="command" value="DELETE"/>
+                    <c:param name="studentId" value="${st.id}"/>
                 </c:url>
                 <tr>
                     <td>${st.firstName}</td>
                     <td>${st.lastName}</td>
                     <td>${st.email}</td>
-                    <td><a href="${tempLink}">Update</a></td>
+                    <td>
+                        <a href="${tempLink}">Update</a> |
+                        <a href="${deleteLink}"
+                           onclick="if (!(confirm('Are you sure you want to delete this student?'))) return false">
+                            Delete</a>
+                    </td>
                 </tr>
             </c:forEach>
         </table>
