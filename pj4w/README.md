@@ -1,6 +1,9 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 9: Improving Your Application using Filters
+* Filter Order example: [pj4w09filterorder](pj4w09filterorder)
+
 ### Ch 8: Writing Custom Tag and Function Libraries
 
 #### Template-Tags project - [pj4w08tags](pj4w08tags)
