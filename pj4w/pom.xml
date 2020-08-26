@@ -20,6 +20,7 @@
     <module>pj4w09filterorder</module>
     <module>pj4w09filterasynch</module>
     <module>pj4wcommon</module>
+      <module>pj4w09compression</module>
   </modules>
 
   <name>pj4w</name>
