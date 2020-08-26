@@ -18,6 +18,7 @@
     <module>pj4w07address</module>
     <module>pj4w08tags</module>
     <module>pj4w09filterorder</module>
+    <module>pj4w09filterasynch</module>
     <module>pj4wcommon</module>
   </modules>
 

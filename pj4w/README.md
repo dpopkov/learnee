@@ -3,6 +3,7 @@ pj4w - Professional Java for Web Applications
 
 ### Ch 9: Improving Your Application using Filters
 * Filter Order example: [pj4w09filterorder](pj4w09filterorder)
+* Filter-Async example: [pj4w09filterasynch](pj4w09filterasynch)
 
 ### Ch 8: Writing Custom Tag and Function Libraries
 
