@@ -19,8 +19,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-<!--            <version>8.0.21</version>-->
-            <version>5.1.48</version>
+            <version>8.0.21</version>
             <scope>provided</scope> <!--put jar into Apache lib dir-->
         </dependency>
         <!-- for using javax.annotation.Resource -->
