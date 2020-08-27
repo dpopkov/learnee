@@ -30,10 +30,6 @@ public class TicketServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        if (req.getSession().getAttribute("username") == null) {
-            resp.sendRedirect("login");
-            return;
-        }
         String action = req.getParameter("action");
         if (action == null) {
             action = "list";
@@ -57,10 +53,6 @@ public class TicketServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (req.getSession().getAttribute("username") == null) {
-            resp.sendRedirect("login");
-            return;
-        }
         String action = req.getParameter("action");
         if (action == null) {
             action = "list";

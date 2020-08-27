@@ -1,6 +1,9 @@
 Customer Support Project
 ========================
 
+### 9 - Improve the application using Filters
+* Simplify Authentication with a Filter
+
 ### 8 - Writing Custom Tag and Function Libraries
 * Creating an EL Function to format time intervals
 * Replace all Java code with custom JSTL Tags
