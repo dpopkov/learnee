@@ -1,4 +1,4 @@
-package learn.spr.jstmlsf5;
+package learn.spr.jstmlsf5.hello;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
