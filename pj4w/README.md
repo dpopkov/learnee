@@ -1,6 +1,10 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 10: Making Your Application Interactive with WebSockets
+* Multiplayer Game with Websockets: [pj4w10game](pj4w10game)
+* Using WebSockets to Communicate in a Cluster: [pj4w10cluster](pj4w10cluster)
+
 ### Ch 9: Improving Your Application using Filters
 * Filter-Order example: [pj4w09filterorder](pj4w09filterorder)
 * Filter-Async example: [pj4w09filterasynch](pj4w09filterasynch)

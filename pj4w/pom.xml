@@ -22,6 +22,7 @@
     <module>pj4wcommon</module>
     <module>pj4w09compression</module>
     <module>pj4w10game</module>
+    <module>pj4w10cluster</module>
   </modules>
 
   <name>pj4w</name>
