@@ -1,10 +1,15 @@
 jstmlsf5 - Java Spring Tutorial Masterclass - Learn Spring Framework 5
 ======================================================================
 
+[More detailed Summary](summary.md)
+
 New Spring 5
 ------------
 
-### Logging with SLF4J & Logback
+### 2 - Using a Spring Container
+* Using XML configuration to instantiate NumberGenerator
+
+### 1 - Logging with SLF4J & Logback
 
 * Logging is keeping a record of specific information from a programs execution
 * Logging uses multiple levels, namely TRACE, DEBUG, INFO, WARN, ERROR which controls 
