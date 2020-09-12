@@ -8,6 +8,7 @@ New Spring 5
 
 ### 2 - Using a Spring Container
 * Using XML configuration to instantiate NumberGenerator
+* Constructor based Dependency Injection
 
 ### 1 - Logging with SLF4J & Logback
 

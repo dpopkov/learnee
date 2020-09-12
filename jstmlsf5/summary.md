@@ -1,6 +1,12 @@
 Multi module Spring Project
 ---------------------------
 
+#### 24 - Constructor based Dependency Injection
+* Use constructor-arg in beans.xml to initialize Game instance
+
+#### 23 - Implementing the Game
+* Create interface Game and class GameImpl
+
 #### 22 - Using a Spring Container
 * Create beans.xml in resources folder.
 * Create the interface NumberGenerator and class NumberGeneratorImpl.
