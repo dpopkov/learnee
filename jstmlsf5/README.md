@@ -11,6 +11,7 @@ New Spring 5
 * Constructor based Dependency Injection.
 * Setter based Dependency Injection.
 * Using Bean Lifecycle Callbacks
+* Autowiring Beans.
 
 ### 1 - Logging with SLF4J & Logback
 

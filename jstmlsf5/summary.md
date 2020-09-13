@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 29 - Autowiring Beans
+* Add context:annotation-config to bean.xml.
+* Use @Autowired at numberGenerator field.
+* Remove setter method for autowired field.
+
 #### 27 - Using Bean Lifecycle Callbacks
 * Use init-method attribute to initialize Game.
 * Use Annotation API, PostConstruct/PreDestroy annotations and CommonAnnotationBeanPostProcessor.
