@@ -6,8 +6,9 @@
 
     <bean id="numberGenerator" class="learn.spr.jstmlsf5.core.NumberGeneratorImpl"/>
 
-    <bean id="game" class="learn.spr.jstmlsf5.core.GameImpl">
-        <property name="numberGenerator" ref="numberGenerator" />
+    <bean id="game" class="learn.spr.jstmlsf5.core.GameImpl"
+          init-method="reset">
+        <property name="numberGenerator" ref="numberGenerator"/>
     </bean>
 
 </beans>

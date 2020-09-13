@@ -10,6 +10,7 @@ New Spring 5
 * Using XML configuration to instantiate NumberGenerator.
 * Constructor based Dependency Injection.
 * Setter based Dependency Injection.
+* Using Bean Lifecycle Callbacks
 
 ### 1 - Logging with SLF4J & Logback
 
