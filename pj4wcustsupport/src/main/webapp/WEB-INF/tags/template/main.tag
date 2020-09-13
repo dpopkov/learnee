@@ -8,8 +8,26 @@
 <html>
 <head>
     <title>Customer Support :: <c:out value="${fn:trim(htmlTitle)}"/></title>
-    <link rel="stylesheet"
-          href="<c:url value="/resource/stylesheet/main.css" />">
+    <link rel="stylesheet" href="<c:url value="/resource/stylesheet/bootstrap.min.css" />" />
+    <link rel="stylesheet" href="<c:url value="/resource/stylesheet/main.css" />">
+    <script src="<c:url value="/resource/js/jquery-1.9.1.js" />"></script>
+    <script src="<c:url value="/resource/js/moment.min.js" />"></script>
+    <script>
+        const postInvisibleForm = function(url, fields) {
+            const form = $('<form id="mapForm" method="post"></form>')
+                .attr({ action: url, style: 'display: none;' });
+            for (let key in fields) {
+                if (fields.hasOwnProperty(key)) {
+                    form.append($('<input type="hidden">').attr({name: key, value: fields[key]}));
+                }
+            }
+            $('body').append(form);
+            form.submit();
+        }
+        const newChat = function() {
+            postInvisibleForm('<c:url value="/chat" />', { action: 'new'});
+        };
+    </script>
     <jsp:invoke fragment="headContent" />
 </head>
 <body>

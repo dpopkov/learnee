@@ -13,8 +13,14 @@
         <a href="<c:url value="/tickets" >
             <c:param name="action" value="create" />
         </c:url>">Create a Ticket</a><br />
+        <a href="javascript:void 0;"
+            onclick="newChat();">Chat with Support</a><br />
+        <a href="<c:url value="/chat">
+            <c:param name="action" value="list" />
+        </c:url>">View Chat Requests</a><br />
         <a href="<c:url value="/sessions" />">List Sessions</a><br />
         <a href="<c:url value="/login?logout" />">Log Out</a><br />
+        <jsp:invoke fragment="extraNavigationContent" />
     </jsp:attribute>
     <jsp:body>
         <jsp:doBody />

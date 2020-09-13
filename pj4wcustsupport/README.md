@@ -1,6 +1,11 @@
 Customer Support Project
 ========================
 
+### 10 - Add Chat using WebSockets
+* Using Encoders and Decoders to Translate Messages
+* Creating the Chat Server Endpoint
+* Writing the JavaScript Chat app
+
 ### 9 - Improve the application using Filters
 * Simplify Authentication with a Filter
 

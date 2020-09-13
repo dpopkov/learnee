@@ -14,6 +14,7 @@ public class Configurator implements ServletContextListener {
         FilterRegistration.Dynamic registration = context.addFilter(
                 "authenticationFilter", new AuthenticationFilter());
         registration.setAsyncSupported(true);
-        registration.addMappingForUrlPatterns(null, false, "/sessions", "/tickets");
+        registration.addMappingForUrlPatterns(null, false,
+                "/sessions", "/tickets", "/chat");
     }
 }
