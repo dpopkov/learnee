@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 31 - Using Java Annotation Configuration
+* Delete beans.xml.
+* Add class AppConfig with @Configuration and @ComponentScan annotations.
+* Use AnnotationConfigApplicationContext instead of ClassPathXmlApplicationContext.
+
 #### 30 - Beans as Components
 * Remove context:annotation-config from bean.xml
 * Add context:component-scan to bean.xml to auto scan a package for components.

@@ -13,6 +13,7 @@ New Spring 5
 * Using Bean Lifecycle Callbacks
 * Autowiring Beans.
 * Use @Component annotations and context:component-scan.
+* Using Java Annotation Configuration.
 
 ### 1 - Logging with SLF4J & Logback
 
