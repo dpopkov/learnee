@@ -6,7 +6,7 @@
     </appender>
 
     <logger name="learn.spr.jstmlsf5.core" level="DEBUG" />
-    <logger name="org.springframework" level="INFO" />
+    <logger name="org.springframework" level="TRACE" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />

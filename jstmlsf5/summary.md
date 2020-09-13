@@ -2,7 +2,8 @@ Multi module Spring Project
 ---------------------------
 
 #### 27 - Using Bean Lifecycle Callbacks
-* Use init-method attribute to initialize Game
+* Use init-method attribute to initialize Game.
+* Use Annotation API, PostConstruct/PreDestroy annotations and CommonAnnotationBeanPostProcessor.
  
 #### 25 - Setter based Dependency Injection
 * Use property for bean in beans.xml to set dependency.
