@@ -1,11 +1,14 @@
 Multi module Spring Project
 ---------------------------
 
+#### 25 - Setter based Dependency Injection
+* Use property for bean in beans.xml to set dependency.
+
 #### 24 - Constructor based Dependency Injection
-* Use constructor-arg in beans.xml to initialize Game instance
+* Use constructor-arg in beans.xml to initialize Game instance.
 
 #### 23 - Implementing the Game
-* Create interface Game and class GameImpl
+* Create interface Game and class GameImpl.
 
 #### 22 - Using a Spring Container
 * Create beans.xml in resources folder.

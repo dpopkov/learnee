@@ -7,7 +7,7 @@ public class GameImpl implements Game {
 
     private static final Logger log = LoggerFactory.getLogger(GameImpl.class);
 
-    private final NumberGenerator numberGenerator;
+    private NumberGenerator numberGenerator;
     private int guessCount = 0;
     private int number;
     private int guess;
@@ -16,7 +16,7 @@ public class GameImpl implements Game {
     private int remainingGuesses;
     private boolean validNumberRange = true;
 
-    public GameImpl(NumberGenerator numberGenerator) {
+    public void setNumberGenerator(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
     }
 

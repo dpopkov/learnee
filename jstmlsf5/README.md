@@ -7,13 +7,14 @@ New Spring 5
 ------------
 
 ### 2 - Using a Spring Container
-* Using XML configuration to instantiate NumberGenerator
-* Constructor based Dependency Injection
+* Using XML configuration to instantiate NumberGenerator.
+* Constructor based Dependency Injection.
+* Setter based Dependency Injection.
 
 ### 1 - Logging with SLF4J & Logback
 
-* Logging is keeping a record of specific information from a programs execution
-* Logging uses multiple levels, namely TRACE, DEBUG, INFO, WARN, ERROR which controls 
+* Logging is keeping a record of specific information from a programs execution.
+* Logging uses multiple levels, namely TRACE, DEBUG, INFO, WARN, ERROR which controls. 
 the granularity, severity and verbosity of information.
 
 #### Logback Initialization Steps
