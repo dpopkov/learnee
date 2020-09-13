@@ -12,6 +12,7 @@ New Spring 5
 * Setter based Dependency Injection.
 * Using Bean Lifecycle Callbacks
 * Autowiring Beans.
+* Use @Component annotations and context:component-scan.
 
 ### 1 - Logging with SLF4J & Logback
 

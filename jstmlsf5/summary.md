@@ -1,6 +1,13 @@
 Multi module Spring Project
 ---------------------------
 
+#### 30 - Beans as Components
+* Remove context:annotation-config from bean.xml
+* Add context:component-scan to bean.xml to auto scan a package for components.
+* Remove bean entries in bean.xml.
+* Add @Component annotation to GameImpl and NumberGeneratorImpl.
+* Use context.getBean(Class) method to get bean instance.
+
 #### 29 - Autowiring Beans
 * Add context:annotation-config to bean.xml.
 * Use @Autowired at numberGenerator field.
