@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 34 Console Module Setup Challenge
+* Create a new maven module in the project with the name console.
+* Add the core project as a dependency.
+* Move the Main class to the console subproject and run the Main class from the console subproject.
+
 #### 32 Message Generator Challenge
 * Add MessageGenerator interface and class MessageGeneratorImpl.
 * Create a bean method in AppConfig creating a MessageGenerator.
