@@ -14,6 +14,7 @@ New Spring 5
 * Autowiring Beans.
 * Use @Component annotations and context:component-scan.
 * Using Java Annotation Configuration.
+* Using bean methods.
 
 ### 1 - Logging with SLF4J & Logback
 

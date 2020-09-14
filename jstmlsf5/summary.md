@@ -1,10 +1,16 @@
 Multi module Spring Project
 ---------------------------
 
+#### 32 Message Generator Challenge
+* Add MessageGenerator interface and class MessageGeneratorImpl.
+* Create a bean method in AppConfig creating a MessageGenerator.
+* Get the MessageGenerator in main() and call its methods.
+
 #### 31 - Using Java Annotation Configuration
 * Delete beans.xml.
 * Add class AppConfig with @Configuration and @ComponentScan annotations.
 * Use AnnotationConfigApplicationContext instead of ClassPathXmlApplicationContext.
+* Then remove @Component annotations and add bean methods with @Bean annotations to AppConfig.
 
 #### 30 - Beans as Components
 * Remove context:annotation-config from bean.xml
