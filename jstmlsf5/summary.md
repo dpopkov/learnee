@@ -1,6 +1,9 @@
 Multi module Spring Project
 ---------------------------
 
+#### 36 Finish Game Logic
+* Implement ConsoleNumberGuess
+
 #### 35 Application Events
 * Use implementation of ApplicationListener interface
 * Use @EventListener annotation and method with parameter
