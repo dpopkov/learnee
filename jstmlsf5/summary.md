@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 35 Application Events
+* Use implementation of ApplicationListener interface
+* Use @EventListener annotation and method with parameter
+* Use @EventListener annotation with parameter
+
 #### 34 Console Module Setup Challenge
 * Create a new maven module in the project with the name console.
 * Add the core project as a dependency.

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "learn.spr.jstmlsf5.core")
+@ComponentScan(basePackages = "learn.spr.jstmlsf5")
 public class AppConfig {
     @Bean
     public NumberGenerator numberGenerator() {

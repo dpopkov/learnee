@@ -15,6 +15,7 @@ New Spring 5
 * Use @Component annotations and context:component-scan.
 * Using Java Annotation Configuration.
 * Using bean methods.
+* Application Events.
 
 ### 1 - Logging with SLF4J & Logback
 
