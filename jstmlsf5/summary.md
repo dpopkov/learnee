@@ -1,6 +1,10 @@
 Multi module Spring Project
 ---------------------------
 
+#### 41 Code Cleanup and Constructor injection
+* Use constructor injection since that is the recommended way.
+* Switch to component annotation instead of bean methods.
+
 #### 40 minNumber Challenge
 * Create a custom qualifier @MinNumber.
 * Use game.properties to specify the value for minNumber.

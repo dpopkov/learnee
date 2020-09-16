@@ -1,8 +1,6 @@
 package learn.spr.jstmlsf5.console;
 
-import learn.spr.jstmlsf5.core.config.AppConfig;
-import learn.spr.jstmlsf5.core.MessageGenerator;
-import learn.spr.jstmlsf5.core.NumberGenerator;
+import learn.spr.jstmlsf5.core.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -15,15 +13,7 @@ public class Main {
         log.info("In module 'console'");
         log.info("Guess The Number Game");
 
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-
-        NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
-        int number = numberGenerator.next();
-        log.info("number = {}", number);
-
-        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
-        log.info("getMainMessage(): {}", messageGenerator.getMainMessage());
-        log.info("getResultMessage(): {}", messageGenerator.getResultMessage());
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(GameConfig.class);
 
         context.close();
     }
