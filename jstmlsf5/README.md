@@ -16,6 +16,7 @@ New Spring 5
 * Using Java Annotation Configuration.
 * Using bean methods.
 * Application Events.
+* Using Qualifiers.
 
 ### 1 - Logging with SLF4J & Logback
 

@@ -5,8 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="learn.spr.jstmlsf5.console" level="DEBUG" />
-    <logger name="org.springframework" level="INFO" />
+    <logger name="learn.spr.jstmlsf5.console" level="WARN" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />

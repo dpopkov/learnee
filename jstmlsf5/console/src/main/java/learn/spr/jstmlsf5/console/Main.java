@@ -1,6 +1,6 @@
 package learn.spr.jstmlsf5.console;
 
-import learn.spr.jstmlsf5.core.AppConfig;
+import learn.spr.jstmlsf5.core.config.AppConfig;
 import learn.spr.jstmlsf5.core.MessageGenerator;
 import learn.spr.jstmlsf5.core.NumberGenerator;
 import org.slf4j.Logger;

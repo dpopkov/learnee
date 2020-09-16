@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 37 Using Qualifiers
+* Have all the configuration in one place - create class GameConfig and import it into AppConfig.
+* Use bean for initializing maxNumber in NumberGeneratorImpl.
+* Create custom annotation Qualifiers.
+
 #### 36 Finish Game Logic
 * Implement ConsoleNumberGuess
 
