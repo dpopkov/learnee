@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 39 Using Properties
+* How to use the @PropertySource annotation.
+* How to use the @Value annotation and default values.
+* How to inject values from a properties file.
+
 #### 37 Using Qualifiers
 * Have all the configuration in one place - create class GameConfig and import it into AppConfig.
 * Use bean for initializing maxNumber in NumberGeneratorImpl.

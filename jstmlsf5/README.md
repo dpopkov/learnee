@@ -17,6 +17,7 @@ New Spring 5
 * Using bean methods.
 * Application Events.
 * Using Qualifiers.
+* Using Properties.
 
 ### 1 - Logging with SLF4J & Logback
 
