@@ -1,6 +1,13 @@
 Multi module Spring Project
 ---------------------------
 
+#### 40 minNumber Challenge
+* Create a custom qualifier @MinNumber.
+* Use game.properties to specify the value for minNumber.
+* Create a bean method to create the bean minNumber.
+* Inject minNumber to NumberGeneratorImpl, add a getter to NumberGenerator.
+* Fix NumberGeneratorImpl to generate numbers between min and max.
+
 #### 39 Using Properties
 * How to use the @PropertySource annotation.
 * How to use the @Value annotation and default values.
