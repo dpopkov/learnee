@@ -5,7 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="learn.spr.jstmlsf5.console" level="WARN" />
+    <logger name="learn.spr.jstmlsf5.console" level="INFO" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />

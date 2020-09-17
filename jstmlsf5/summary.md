@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 43, 44, 45 Lombok Introduction, Setup, Using
+* Use @Slf4j annotation and remove declaration of Logger.
+* Use @Getter and @Setter annotations with classes and fields.
+* Use @Getter(AccessLevel.NONE) for fields that should not have getters.
+
 #### 41 Code Cleanup and Constructor injection
 * Use constructor injection since that is the recommended way.
 * Switch to component annotation instead of bean methods.
