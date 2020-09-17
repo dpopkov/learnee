@@ -1,6 +1,9 @@
 Multi module Spring Project
 ---------------------------
 
+#### 48 Start ToDo List application
+* Add dependency for spring-webmvc.
+
 #### 43, 44, 45 Lombok Introduction, Setup, Using
 * Use @Slf4j annotation and remove declaration of Logger.
 * Use @Getter and @Setter annotations with classes and fields.
