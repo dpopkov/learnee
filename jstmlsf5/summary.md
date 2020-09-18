@@ -1,6 +1,13 @@
 Multi module Spring Project
 ---------------------------
 
+#### 50 Setup Maven War plugin
+* Maven WAR and Maven Cargo Plugins
+* Add war packaging to the project.
+* Use option failOnMissingWebXml=false for Maven WAR plugin config.
+* Create directory main/webapp and main/webapp/WEB-INF.
+* Add index.html
+
 #### 48 Start ToDo List application
 * Add dependency for spring-webmvc.
 

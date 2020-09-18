@@ -7,6 +7,7 @@ New Spring 5
 ------------
 
 ### 4 - Spring MVC
+* Using Maven WAR and Maven Cargo Plugins
 
 ### 3 - Using Lombok
 
