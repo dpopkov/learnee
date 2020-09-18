@@ -1,6 +1,10 @@
 Multi module Spring Project
 ---------------------------
 
+#### 53 SimpleController
+* Add DemoController, annotate it with @Controller.
+* Add method hello(), annotate it with @GetMapping("/hello") and @ResponseBody.
+
 #### 52 Setup Dispatcher Servlet
 * Add WebConfig class with annotations @Configuration, @ComponentScan, @EnableWebMvc.
 * Add WebAppInitializer class which implements WebApplicationInitializer.
