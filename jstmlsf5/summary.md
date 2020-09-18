@@ -1,6 +1,12 @@
 Multi module Spring Project
 ---------------------------
 
+#### 52 Setup Dispatcher Servlet
+* Add WebConfig class with annotations @Configuration, @ComponentScan, @EnableWebMvc.
+* Add WebAppInitializer class which implements WebApplicationInitializer.
+* Use AnnotationConfigWebApplicationContext for registering WebConfig.
+* Create, register and configure the dispatcher servlet.
+
 #### 51 Setup Maven Cargo plugin using Tomcat
 * Add org.codehaus.cargo to pom.xml.
 * Add this configuration for cargo: containerId=tomcat9x, type=embedded.
