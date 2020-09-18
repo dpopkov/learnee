@@ -1,8 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 51 Setup Maven Cargo plugin using Tomcat
+* Add org.codehaus.cargo to pom.xml.
+* Add this configuration for cargo: containerId=tomcat9x, type=embedded.
+
 #### 50 Setup Maven War plugin
-* Maven WAR and Maven Cargo Plugins
 * Add war packaging to the project.
 * Use option failOnMissingWebXml=false for Maven WAR plugin config.
 * Create directory main/webapp and main/webapp/WEB-INF.
