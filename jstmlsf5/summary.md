@@ -1,6 +1,16 @@
 Multi module Spring Project
 ---------------------------
 
+#### 57 Simple Service Challenge
+* Create an interface DemoService with a method "String getHelloMessage(String user)" and
+"String getWelcomeMessage()".
+* Create a class DemoServiceImpl and annotate it with @Service.
+* In DemoController inject/autowire DemoService using constructor injection.
+* In the controller methods, use DemoService to add attributes to the model 
+instead of using strings.
+* Remove the user model attribute in the welcome() controller method and use another
+attribute calling getHelloMessage() from DemoService.
+
 #### 56 Model and Model Attributes
 * Add Model parameter to welcome() method - "String welcome(Model model)".
 * Add an attribute to the model and use EL notation ${attrName} in JSP page.
