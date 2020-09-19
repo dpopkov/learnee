@@ -9,6 +9,8 @@ New Spring 5
 ### 4 - Spring MVC
 * Using Maven WAR and Maven Cargo Plugins with Tomcat.
 * Setup Dispatcher Servlet.
+* Using @Controller, @GetMapping and @ResponseBody for a simple controller.
+* Use ViewResolver for mapping a view name to a real jsp file.
 
 ### 3 - Using Lombok
 

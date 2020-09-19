@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 54 View Resolver and View
+* Add WEB-INF/view/welcome.jsp.
+* Add to WebConfig a bean method returning ViewResolver.
+* Add to DemoController welcome() method with @GetMapping annotation.
+
 #### 53 SimpleController
 * Add DemoController, annotate it with @Controller.
 * Add method hello(), annotate it with @GetMapping("/hello") and @ResponseBody.
