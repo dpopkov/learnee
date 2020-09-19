@@ -11,6 +11,7 @@ New Spring 5
 * Setup Dispatcher Servlet.
 * Using @Controller, @GetMapping and @ResponseBody for a simple controller.
 * Use ViewResolver for mapping a view name to a real jsp file.
+* Using Model and @ModelAttribute annotation.
 
 ### 3 - Using Lombok
 

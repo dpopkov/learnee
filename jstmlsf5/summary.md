@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 56 Model and Model Attributes
+* Add Model parameter to welcome() method - "String welcome(Model model)".
+* Add an attribute to the model and use EL notation ${attrName} in JSP page.
+* Add method with @ModelAttribute annotation to add another attribute to the Model.
+
 #### 55 Spring MVC Request Processing
 
 #### 54 View Resolver and View
