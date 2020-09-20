@@ -1,6 +1,10 @@
 Multi module Spring Project
 ---------------------------
 
+#### 63 Creating view for items and using JSTL tags
+* Add JSTL dependency to pom.xml.
+* Add jsp file with a table using JSTL
+
 #### 62 Creating the Todo Item Controller
 * Add TodoItemController class.
 * Add Mappings utility class containing string constants for mapping.
