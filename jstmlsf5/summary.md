@@ -1,6 +1,18 @@
 Multi module Spring Project
 ---------------------------
 
+#### 60 ToDo Item class
+* Use Lombok annotations for data class.
+
+#### 59 ToDoList Project Requirements
+* A page for viewing all the to-do items in the table with their title and deadline.
+* A page for viewing a single to-do item including its details.
+* A page for updating a single to-do item.
+* A page for creating a new to-do item.
+* Deleting functionality that removes a single to-do item from the list.
+* A home page with a welcome message and a link to the page with all the items.
+* For simplicity data will be stored in memory.
+
 #### 58 Request Parameters
 * Using @RequestParam annotation for getting request parameters.
 
