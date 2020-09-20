@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 62 Creating the Todo Item Controller
+* Add TodoItemController class.
+* Add Mappings utility class containing string constants for mapping.
+* Add ViewNames utility class containing string constants for view names.
+
 #### 61 ToDoData class
 * Add TodoData class to represent a data source (using in-memory db).
 * Add to TodoData methods for crud operations and use Lombok @NonNull annotation.
