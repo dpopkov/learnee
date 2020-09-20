@@ -1,6 +1,9 @@
 Multi module Spring Project
 ---------------------------
 
+#### 58 Request Parameters
+* Using @RequestParam annotation for getting request parameters.
+
 #### 57 Simple Service Challenge
 * Create an interface DemoService with a method "String getHelloMessage(String user)" and
 "String getWelcomeMessage()".

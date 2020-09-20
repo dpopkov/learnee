@@ -13,6 +13,7 @@ New Spring 5
 * Use ViewResolver for mapping a view name to a real jsp file.
 * Using Model and @ModelAttribute annotation.
 * Using @Service annotation.
+* Using @RequestParam annotation.
 
 ### 3 - Using Lombok
 
