@@ -1,8 +1,12 @@
 Multi module Spring Project
 ---------------------------
 
+#### 61 ToDoData class
+* Add TodoData class to represent a data source (using in-memory db).
+* Add to TodoData methods for crud operations and use Lombok @NonNull annotation.
+
 #### 60 ToDo Item class
-* Use Lombok annotations for data class.
+* Use Lombok annotations for POJO class.
 
 #### 59 ToDoList Project Requirements
 * A page for viewing all the to-do items in the table with their title and deadline.
