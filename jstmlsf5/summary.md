@@ -1,6 +1,15 @@
 Multi module Spring Project
 ---------------------------
 
+#### 64 Todo Item Service Challenge
+* Create an interface TodoItemService with methods addItem(TodoItem), removeItem(int),
+getItem(int), updateItem(TodoItem), getData():TodoData.
+* Create a class TodoItemServiceImpl and annotate it with @Service.
+* Create a final field TodoData and initialize it.
+* In TodoController inject/autowire TodoItemService using constructor injection.
+* In the controller get todoData using service method instead of using new TodoData().
+* Add another dummy item to TodoData for testing purposes.
+
 #### 63 Creating view for items and using JSTL tags
 * Add JSTL dependency to pom.xml.
 * Add jsp file with a table using JSTL
