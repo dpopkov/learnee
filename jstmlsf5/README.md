@@ -9,11 +9,12 @@ New Spring 5
 ### 4 - Spring MVC
 * Using Maven WAR and Maven Cargo Plugins with Tomcat.
 * Setup Dispatcher Servlet.
-* Using @Controller, @GetMapping and @ResponseBody for a simple controller.
+* Using @Controller, @GetMapping, @PostMapping and @ResponseBody for a simple controller.
 * Use ViewResolver for mapping a view name to a real jsp file.
 * Using Model and @ModelAttribute annotation.
 * Using @Service annotation.
 * Using @RequestParam annotation.
+* Using Spring forms.
 
 ### 3 - Using Lombok
 
@@ -32,7 +33,7 @@ New Spring 5
 
 ### 1 - Logging with SLF4J & Logback
 
-* Logging is keeping a record of specific information from a programs execution.
+* Logging is keeping a record of specific information from a program's execution.
 * Logging uses multiple levels, namely TRACE, DEBUG, INFO, WARN, ERROR which controls. 
 the granularity, severity and verbosity of information.
 

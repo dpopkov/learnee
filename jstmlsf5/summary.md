@@ -1,6 +1,15 @@
 Multi module Spring Project
 ---------------------------
 
+#### 66 Implementing Post Redirect Get Pattern
+* Add handler method with @GetMapping to controller that prepares the model 
+  and returns name of the form view.
+* Add a table with input fields to the form.
+
+#### 65 Implementing Add Item Feature
+* Create jsp page with form taglib (uri="http://www.springframework.org/tags/form")
+* Add handler method with @PostMapping that uses service to add the item and then redirects to items list.
+
 #### 64 Todo Item Service Challenge
 * Create an interface TodoItemService with methods addItem(TodoItem), removeItem(int),
 getItem(int), updateItem(TodoItem), getData():TodoData.
@@ -49,7 +58,7 @@ instead of using strings.
 attribute calling getHelloMessage() from DemoService.
 
 #### 56 Model and Model Attributes
-* Add Model parameter to welcome() method - "String welcome(Model model)".
+* Add Model parameter to welcome() method - "String welcome(Model)".
 * Add an attribute to the model and use EL notation ${attrName} in JSP page.
 * Add method with @ModelAttribute annotation to add another attribute to the Model.
 
@@ -97,7 +106,7 @@ attribute calling getHelloMessage() from DemoService.
 * Use game.properties to specify the value for minNumber.
 * Create a bean method to create the bean minNumber.
 * Inject minNumber to NumberGeneratorImpl, add a getter to NumberGenerator.
-* Fix NumberGeneratorImpl to generate numbers between min and max.
+* Fix NumberGeneratorImpl to generate numbers between the min and max.
 
 #### 39 Using Properties
 * How to use the @PropertySource annotation.
@@ -134,7 +143,7 @@ attribute calling getHelloMessage() from DemoService.
 * Then remove @Component annotations and add bean methods with @Bean annotations to AppConfig.
 
 #### 30 - Beans as Components
-* Remove context:annotation-config from bean.xml
+* Remove context:annotation-config from the bean.xml file.
 * Add context:component-scan to bean.xml to auto scan a package for components.
 * Remove bean entries in bean.xml.
 * Add @Component annotation to GameImpl and NumberGeneratorImpl.
