@@ -15,6 +15,7 @@ New Spring 5
 * Using @Service annotation.
 * Using @RequestParam annotation.
 * Using Spring forms.
+* Registering a view without controller.
 
 ### 3 - Using Lombok
 

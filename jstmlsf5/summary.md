@@ -1,6 +1,13 @@
 Multi module Spring Project
 ---------------------------
 
+#### 67 Home View and Navigation
+* Create a home view.
+* Implement navigation between the views.
+* Make WebConfig class to implement WebMvcConfigurer interface, override method addViewControllers.
+* Register in WebConfig the new home view without a controller.
+* Delete index.html.
+
 #### 66 Implementing Post Redirect Get Pattern
 * Add handler method with @GetMapping to controller that prepares the model 
   and returns name of the form view.

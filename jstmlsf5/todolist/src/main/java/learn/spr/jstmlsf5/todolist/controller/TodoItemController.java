@@ -53,6 +53,7 @@ public class TodoItemController {
     public String processItem(@ModelAttribute(AttributeNames.TODO_ITEM) TodoItem todoItem) {
         log.info("todoItem from form = {}", todoItem);
         service.add(todoItem);
+        log.info("todoItem added = {}", todoItem);
         return "redirect:/" + Mappings.ITEMS;
     }
 }
