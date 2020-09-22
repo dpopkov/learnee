@@ -43,8 +43,15 @@ public class TodoItemController {
 
     @SuppressWarnings("SameReturnValue")
     @GetMapping(Mappings.ADD_ITEM)
-    public String addItem(Model model) {
-        TodoItem todoItem = new TodoItem("", "", LocalDate.now());
+    public String addEditItem(@RequestParam(required = false, defaultValue = "-1") int id,
+                              Model model) {
+        TodoItem todoItem = service.get(id);
+        if (todoItem == null) {
+            log.info("Creating new TodoItem");
+            todoItem = new TodoItem("", "", LocalDate.now());
+        } else {
+            log.info("Starting to edit TodoItem with id = {}.", todoItem.getId());
+        }
         model.addAttribute(AttributeNames.TODO_ITEM, todoItem);
         return ViewNames.ADD_ITEM;
     }
@@ -52,9 +59,14 @@ public class TodoItemController {
     @SuppressWarnings("SpringMVCViewInspection")
     @PostMapping(Mappings.ADD_ITEM)
     public String processItem(@ModelAttribute(AttributeNames.TODO_ITEM) TodoItem todoItem) {
-        log.info("todoItem from form = {}", todoItem);
-        service.add(todoItem);
-        log.info("todoItem added = {}", todoItem);
+        if (todoItem.getId() == 0) {
+            log.info("adding todoItem from form = {}", todoItem);
+            service.add(todoItem);
+            log.info("todoItem added = {}", todoItem);
+        } else {
+            service.update(todoItem);
+            log.info("todoItem updated = {}", todoItem);
+        }
         return "redirect:/" + Mappings.ITEMS;
     }
 

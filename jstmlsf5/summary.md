@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 69 Implement Edit Item Feature
+* Add links to items_list.jsp for editing.
+* Modify method addItem (add a new parameter for id) to reuse it for editing existing items.
+* Modify method processItem to reuse it for updating of existing items.
+
 #### 68 Delete Item Challenge
 * Add method deleteItem(int id) to the TodoItemController using @RequestParameter.
 * Use service to delete the item and redirect to list of items.
