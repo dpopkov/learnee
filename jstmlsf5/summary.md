@@ -1,6 +1,11 @@
 Multi module Spring Project
 ---------------------------
 
+#### 70 View Item Challenge
+* Create a view "view_item.jsp".
+* Add a link to items list view.
+* Create a method viewItem() in the TodoItemController.
+
 #### 69 Implement Edit Item Feature
 * Add links to items_list.jsp for editing.
 * Modify method addItem (add a new parameter for id) to reuse it for editing existing items.

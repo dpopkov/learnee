@@ -78,4 +78,13 @@ public class TodoItemController {
         log.info("deleted item with id = {}.", id);
         return "redirect:/" + Mappings.ITEMS;
     }
+
+    @SuppressWarnings("SameReturnValue")
+    @GetMapping(Mappings.VIEW_ITEM)
+    public String viewItem(@RequestParam int id, Model model) {
+        log.info("viewing an item with id = {}.", id);
+        TodoItem todoItem = service.get(id);
+        model.addAttribute(AttributeNames.TODO_ITEM, todoItem);
+        return ViewNames.VIEW_ITEM;
+    }
 }
