@@ -23,6 +23,7 @@
     <module>pj4w09compression</module>
     <module>pj4w10game</module>
     <module>pj4w10cluster</module>
+    <module>pj4w11logging</module>
   </modules>
 
   <name>pj4w</name>
@@ -33,6 +34,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <jackson.version>2.11.2</jackson.version>
     <logback.version>1.2.3</logback.version>
+    <log4j.version>2.13.3</log4j.version>
   </properties>
 
   <dependencies>
@@ -88,11 +90,55 @@
         <version>${jackson.version}</version>
         <scope>compile</scope>
       </dependency>
-      <!-- Logging -->
+      <!-- Logging with Logback -->
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
         <version>${logback.version}</version>
+      </dependency>
+      <!-- Logging with log4j-2 -->
+      <!-- log4j-api provides the API for logging. This is the only Log4j dependency that is in compile
+           scope in your application because it contains the only classes you should code against. -->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>${log4j.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <!-- log4j-core contains the standard Log4j 2 implementation. It is the implementation you are
+          configuring, not the API. The API requires no configuration. -->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>${log4j.version}</version>
+        <scope>runtime</scope>
+      </dependency>
+      <!-- log4j-jcl is an adapter to support the Commons Logging API. Several libraries you use
+          in the rest of this book log against the Commons Logging API, and this adapter causes
+          Commons Logging to use Log4j 2 as its implementation. -->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-jcl</artifactId>
+        <version>${log4j.version}</version>
+        <scope>runtime</scope>
+      </dependency>
+      <!-- log4j-slf4j-impl is an SLF4J implementation adapter. Several libraries used throughout
+          the rest of this book log against the SLF4J API, and this adapter causes SLF4J to use Log4j
+          2 as its implementation. -->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>${log4j.version}</version>
+        <scope>runtime</scope>
+      </dependency>
+      <!-- log4j-taglib is an adapter that includes a JSP Tag Library for logging within your JSPs.
+          Like the previous three dependencies, this dependency is in runtime scope for the purposes
+          of writing your application code because you do not need to compile against it. -->
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-taglib</artifactId>
+        <version>${log4j.version}</version>
+        <scope>runtime</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

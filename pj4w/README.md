@@ -1,6 +1,12 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 11: Using Logging to Monitor Your Application
+* Integrating Logging to application: [pj4w11logging](pj4w11logging)
+* Creating the Log4j2 configuration files
+* Utilizing Fish Tagging with a Web Filter
+* Writing logging statements in Java code
+
 ### Ch 10: Making Your Application Interactive with WebSockets
 * Multiplayer Game with Websockets: [pj4w10game](pj4w10game)
 * Using WebSockets to Communicate in a Cluster: [pj4w10cluster](pj4w10cluster)
