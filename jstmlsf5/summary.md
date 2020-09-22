@@ -1,6 +1,10 @@
 Multi module Spring Project
 ---------------------------
 
+#### 68 Delete Item Challenge
+* Add method deleteItem(int id) to the TodoItemController using @RequestParameter.
+* Use service to delete the item and redirect to list of items.
+
 #### 67 Home View and Navigation
 * Create a home view.
 * Implement navigation between the views.
