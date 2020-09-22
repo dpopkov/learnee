@@ -1,5 +1,8 @@
 package learn.ee.pj4wcustsupport.chat;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -15,6 +18,8 @@ import java.util.List;
  * It includes the opening message and a log of all messages sent during the chat.
  */
 public class ChatSession {
+    private static final Logger log = LogManager.getLogger();
+
     private final List<ChatMessage> chatLog = new ArrayList<>();
     private long sessionId;
     private String customerUsername;
@@ -73,17 +78,21 @@ public class ChatSession {
 
     @JsonIgnore
     public void log(ChatMessage message) {
+        log.trace("Chat message logged for session {}.", sessionId);
         chatLog.add(message);
     }
 
     @JsonIgnore
     public void writeChatLog(File file) throws IOException {
+        log.traceEntry("Writing chat log to file {}.", file);
         ObjectMapper mapper = new ObjectMapper();
         mapper.findAndRegisterModules();
         mapper.configure(JsonGenerator.Feature.AUTO_CLOSE_TARGET, false);
         mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
         try (OutputStream stream = new BufferedOutputStream(new FileOutputStream(file))) {
             mapper.writeValue(stream, chatLog);
+        } finally {
+            log.traceExit();
         }
     }
 }

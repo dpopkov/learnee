@@ -1,6 +1,14 @@
 Customer Support Project
 ========================
 
+### 11 - Using Logging to Monitor Your Application
+* Add dependencies for log4j2 to pom.xml
+* Add configuration file log4j2.xml.
+* Add LoggingFilter to the beginning of the filter chain in the Configurator
+  so that all requests are fish tagged.
+* Remove all uses of System.out, System.err, and printStackTrace()
+  and replace with Log4j2 logging.
+
 ### 10 - Add Chat using WebSockets
 * Using Encoders and Decoders to Translate Messages
 * Creating the Chat Server Endpoint

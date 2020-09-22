@@ -1,5 +1,8 @@
 package learn.ee.pj4wcustsupport;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import learn.ee.pj4wcustsupport.chat.ChatEndpoint;
 import org.apache.commons.lang3.math.NumberUtils;
 
@@ -18,15 +21,18 @@ import java.io.IOException;
         urlPatterns = "/chat"
 )
 public class ChatServlet extends HttpServlet {
+    private static final Logger log = LogManager.getLogger();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String action = req.getParameter("action");
         if("list".equals(action)) {
+            log.debug("Listing pending support chats.");
             req.setAttribute("sessions", ChatEndpoint.pendingSessions);
             req.getRequestDispatcher("/WEB-INF/jsp/view/chat/list.jsp")
                     .forward(req, resp);
         } else {
+            log.info("Rejected chat servlet GET request with invalid action [{}].", action);
             resp.sendRedirect("tickets");
         }
     }
@@ -40,6 +46,7 @@ public class ChatServlet extends HttpServlet {
         String view = null;
         switch (action) {
             case "new":
+                log.debug("Accepted new chat request.");
                 req.setAttribute("chatSessionId", 0);
                 view = "chat";
                 break;
@@ -48,6 +55,7 @@ public class ChatServlet extends HttpServlet {
                 if (!NumberUtils.isDigits(id)) {
                     resp.sendRedirect("chat?list");
                 } else {
+                    log.debug("Pending chat request joined.");
                     req.setAttribute("chatSessionId", Long.parseLong(id));
                     view = "chat";
                 }
