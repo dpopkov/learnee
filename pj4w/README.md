@@ -6,6 +6,7 @@ pj4w - Professional Java for Web Applications
 * Creating the Log4j2 configuration files
 * Utilizing Fish Tagging with a Web Filter
 * Writing logging statements in Java code
+* Using the Log Tag library in JSPs
 
 ### Ch 10: Making Your Application Interactive with WebSockets
 * Multiplayer Game with Websockets: [pj4w10game](pj4w10game)
