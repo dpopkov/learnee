@@ -12,7 +12,6 @@
         <module>hellomaven</module>
         <module>core</module>
         <module>console</module>
-        <module>todolist</module>
     </modules>
 
     <properties>
