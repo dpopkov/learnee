@@ -24,6 +24,7 @@
     <module>pj4w10game</module>
     <module>pj4w10cluster</module>
     <module>pj4w11logging</module>
+    <module>pj4w12onecontextxmlconfig</module>
   </modules>
 
   <name>pj4w</name>
@@ -35,6 +36,8 @@
     <jackson.version>2.11.2</jackson.version>
     <logback.version>1.2.3</logback.version>
     <log4j.version>2.13.3</log4j.version>
+    <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+    <spring.version>5.2.9.RELEASE</spring.version>
   </properties>
 
   <dependencies>
@@ -139,6 +142,28 @@
         <artifactId>log4j-taglib</artifactId>
         <version>${log4j.version}</version>
         <scope>runtime</scope>
+      </dependency>
+
+      <!-- Dependencies for Part 2 - Adding Spring -->
+      <dependency>
+        <groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+        <scope>compile</scope>
+      </dependency>
+      <!-- Javax Annotation API -->
+      <dependency>
+        <groupId>javax.annotation</groupId>
+        <artifactId>javax.annotation-api</artifactId>
+        <version>${javax.annotation-api.version}</version>
+        <scope>runtime</scope>
+      </dependency>
+      <!-- Spring Dependencies -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring.version}</version>
+        <scope>compile</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
