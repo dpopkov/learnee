@@ -3,6 +3,7 @@ pj4w - Professional Java for Web Applications
 
 ### Ch 12: Introducing Spring Framework
 Configuring one context XML config project
+Configuring XML config project containing root and servlet application contexts
 
 ### Ch 11: Using Logging to Monitor Your Application
 * Integrating Logging to application: [pj4w11logging](pj4w11logging)

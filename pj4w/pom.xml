@@ -25,6 +25,7 @@
     <module>pj4w10cluster</module>
     <module>pj4w11logging</module>
     <module>pj4w12onecontextxmlconfig</module>
+    <module>pj4w12xmlconfig</module>
   </modules>
 
   <name>pj4w</name>
