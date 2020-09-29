@@ -27,6 +27,7 @@
     <module>pj4w12onecontextxmlconfig</module>
     <module>pj4w12xmlconfig</module>
     <module>pj4w12hybridconfig</module>
+    <module>pj4w12javaconfig</module>
   </modules>
 
   <name>pj4w</name>
