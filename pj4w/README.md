@@ -1,6 +1,9 @@
 pj4w - Professional Java for Web Applications
 =============================================
 
+### Ch 13: Replacing Your Servlets with Controllers
+* Using Spring Model and View Pattern
+
 ### Ch 12: Introducing Spring Framework
 * Configuring one context XML config project
 * Configuring XML config project containing root and servlet application contexts
